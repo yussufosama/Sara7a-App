@@ -1,10 +1,11 @@
 {
-  "name": "sar7a-app",
+  "name": "saraha",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start:dev": "cross-env NODE_ENV=dev node --watch ./src/main.js --enable-turbo-mode"
+    "start:dev": "cross-env NODE_ENV=dev node --watch ./src/main.js --enable-turbo-mode",
+    "start:prod": "cross-env NODE_ENV=prod node --watch ./src/main.js --enable-turbo-mode"
   },
   "keywords": [],
   "author": "",
@@ -12,12 +13,17 @@
   "type": "module",
   "dependencies": {
     "bcrypt": "^6.0.0",
-    "dotenv": "^18.0.5",
+    "dotenv": "^18.0.4",
+    "enum": "^3.0.4",
     "express": "^5.2.1",
-    "mongoose": "^9.11.0"
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.10.2",
+    "multer": "^2.5.0",
+    "nodemailer": "^10.1.1",
+    "redis": "^6.3.0",
+    "zod": "^4.6.6"
   },
   "devDependencies": {
     "cross-env": "^10.1.0"
-  },
-  "$schema": "./.vscode/package.schema.json"
+  }
 }
